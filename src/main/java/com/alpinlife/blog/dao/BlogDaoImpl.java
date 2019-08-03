@@ -29,7 +29,9 @@ public class BlogDaoImpl implements BlogDao {
 
     @Override
     public Post insertPost(Post post) {
-        return null;
+        mongoTemplate.save(post);
+
+        return post;
     }
 
     @Override

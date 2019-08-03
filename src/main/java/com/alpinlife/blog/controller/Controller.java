@@ -3,7 +3,6 @@ package com.alpinlife.blog.controller;
 import com.alpinlife.blog.dao.BlogDao;
 import com.alpinlife.blog.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,10 +23,8 @@ public class Controller {
         return blogDao.findAll();
     }
 
-//    @PostMapping
-//    public ResponseEntity<Post> insertPost(@RequestBody Post post) {
-//        blogDao.insertPost(post);
-//
-//
-//    }
+    @PostMapping
+    public Post insertPost(@RequestBody Post post) {
+        return blogDao.insertPost(post);
+    }
 }
