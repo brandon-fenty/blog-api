@@ -1,9 +1,16 @@
 package com.alpinlife.blog.dao;
 
 import com.alpinlife.blog.model.Post;
-import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface BlogDao extends MongoRepository<Post, String> {
+import java.util.List;
+
+public interface BlogDao {
+
+    List<Post> findAll();
+
+    Post getPostById(String id);
+
+    Post insertPost(Post post);
+
+    boolean deletePost(String id);
 }
