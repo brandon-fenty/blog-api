@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Repository
@@ -29,6 +31,9 @@ public class BlogDaoImpl implements BlogDao {
 
     @Override
     public Post insertPost(Post post) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        post.setTimestamp(sdf.format(new Date()));
+
         mongoTemplate.save(post);
 
         return post;
