@@ -1,4 +1,4 @@
-package com.alpinlife.blog.model;
+package com.wanderclust.blog.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

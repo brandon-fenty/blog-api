@@ -1,6 +1,6 @@
-package com.alpinlife.blog.dao;
+package com.wanderclust.blog.dao;
 
-import com.alpinlife.blog.model.Post;
+import com.wanderclust.blog.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;

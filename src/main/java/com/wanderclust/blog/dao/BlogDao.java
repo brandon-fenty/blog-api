@@ -1,6 +1,6 @@
-package com.alpinlife.blog.dao;
+package com.wanderclust.blog.dao;
 
-import com.alpinlife.blog.model.Post;
+import com.wanderclust.blog.model.Post;
 
 import java.util.List;
 

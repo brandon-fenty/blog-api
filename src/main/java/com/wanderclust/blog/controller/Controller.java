@@ -1,7 +1,7 @@
-package com.alpinlife.blog.controller;
+package com.wanderclust.blog.controller;
 
-import com.alpinlife.blog.dao.BlogDao;
-import com.alpinlife.blog.model.Post;
+import com.wanderclust.blog.dao.BlogDao;
+import com.wanderclust.blog.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
